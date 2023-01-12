@@ -1,60 +1,92 @@
-body{height: 100vh;
-background: lavender;
-justify-content: center;
-align-items: center;}
-#add-task-container{width: 350px;
-padding: 20px;
-background-color: white;
-border-radius: 20px;
-box-shadow: 0 0 3px;
-margin-bottom: 20px;
-display: flex;}
-input{flex: 5;
-margin-right: 10px;
-border-radius: 10px;
-font-size: 1.2rem;
-padding: 5px;
+body {
+  height: 100vh; /* Good usage of relative length units */
+  background: lavender;
+  justify-content: center;
+  align-items: center;
 }
-#add-task{
-    font-size: 1.2rem;
-    padding: 5px;
-    flex: 1;
-    background-color: white;
-    color: green;
-    border: green solid 2px;
-    border-radius: 10px;
-}
-#add-task:hover{background-color: green;
-color: white;}
 
+#add-task-container {
+  width: 350px; /* Try to use relative length units */
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 3px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+input {
+  flex: 5;
+  margin-right: 10px;
+  border-radius: 10px;
+  font-size: 1.2rem; /* Good usage of relative length units */
+  padding: 5px;
+}
+
+#add-task {
+  font-size: 1.2rem; /* Good usage of relative length units */
+  padding: 5px;
+  flex: 1;
+  background-color: white;
+  color: green;
+  border: green solid 2px;
+  border-radius: 10px;
+}
+
+#add-task:hover {
+  background-color: green;
+  color: white;
+}
 
 .task {
-background-color: white;
-border-radius: 10px;
-box-shadow: 0 0 3px;
-padding: 5px;
-margin-bottom: 5px;
-display: flex;
-justify-content: space-between;}
-.task li{list-style: none;
-    width: 100%;
-flex: 4;
-padding: 5px;
-font-size: 1.3rem;
-margin: 10px;}
-.task button{flex: 1;
-border-radius: 10px;
-background-color: white;
-cursor: pointer;}
-.task .checkTask{color: orange;
-margin-right: 5px;
-border:solid 2px orange;
-font-size: 1.5rem;}
-.task .checkTask:hover{background-color: orange;
-color: white;}
-.task .deleteTask{color: red;
-margin-right: 5px;
-border:solid 2px red;
-font-size: 1.3rem;}
-.task .deleteTask:hover{background-color: red;
-color: white;}
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 3px;
+  padding: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task li {
+  list-style: none;
+  width: 100%;
+  flex: 4;
+  padding: 5px;
+  font-size: 1.3rem;
+  margin: 10px;
+}
+
+.task button {
+  flex: 1;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.task .checkTask {
+  color: orange;
+  margin-right: 5px;
+  border: solid 2px orange;
+  font-size: 1.5rem;
+}
+
+.task .checkTask:hover {
+  background-color: orange;
+  color: white;
+}
+
+.task .deleteTask {
+  color: red;
+  margin-right: 5px;
+  border: solid 2px red;
+  font-size: 1.3rem;
+}
+
+.task .deleteTask:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Try to follow consistent naming conventions */
+/* e.g: add-task (classname separated by hyphen) and deleteTask (camcelCase) --> Either use camelCase or classname separated by hyphen */
